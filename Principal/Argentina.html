@@ -1,0 +1,117 @@
+
+<!DOCTYPE html >
+<html>
+  
+<head>
+  <meta charset="UTF-8">
+    <title>TURISTEando</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="../public/css/principal.css" rel="stylesheet" type="text/css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="../dist/map/jquery.vmap.argentina.js" charset="utf-8"></script>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery('#vmap').vectorMap({
+          map: 'argentina_en',
+          onRegionClick: function (element, code, region) {
+            var message = 'Elegiste '
+              + region
+                            
+              alert(message);
+          }
+        });
+      });
+    </script>
+   
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+            <a href="#"><span class="logo">Publicá tu anuncio</span></a>
+            <nav>
+              <a href="#">Cómo funciona</a>
+            </nav>
+        </div>
+        <div class="header-center">
+          <img src="/public/images/gif fondo blanco.gif" alt="logo">
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </nav>
+        </div>
+      </div>
+      <div class="menu" data-animation="center">
+        <nav >
+          <a href="#0">Ingresá</a>
+          <span class="separador">|
+          <a href="#0"> Registrate </a>
+        </nav>
+      </div>
+    </header>
+    
+    <main> 
+     <div class="box">
+        <h2> Turisteamos en:  </h2>
+          <div class="container-1">
+           <span class="icon"><i class="fa fa-search"></i></span>
+           <input type="search" id="search" placeholder="Mendoza, Tucumán, Córdoba..." />
+          </div>
+     </div>
+
+     <div class ="map"> 
+        <div id="vmap" style="width: 800px; height: 900px; opacity: 0.8;"></div>
+     </div>
+             
+    </main>
+    
+    
+    <footer>
+    
+    <ul class="footer" >
+      <li>
+        <a href="#0">
+          Quienes Somos
+          <span class="border border-top"></span>
+          <span class="border border-bottom"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#0">
+          Preguntas frecuentes
+          <span class="border border-top"></span>
+          <span class="border border-bottom"></span>
+          
+        </a>
+      </li>
+      <li>
+        <a href="#0">
+          Ayuda
+          <span class="border border-top"></span>
+          <span class="border border-bottom"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#0">
+          Metodos de pago
+          <span class="border border-top"></span>
+          <span class="border border-bottom"></span>
+        </a>
+      </li>
+    </ul>
+      <a>Copyright © 1999-2021 TURISTEANDO S.A. </a>
+    </div>
+    
+    </footer>
+  </body>
+</html>
