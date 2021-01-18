@@ -23,7 +23,7 @@ https://www.amazon.com/-/es/
 BOOKING
 https://www.booking.com/
 
-TIENDA NUBE - estetica, organacion y facilidad de comprensión para el usuario.
+TIENDA NUBE - estetica, organizacion y facilidad de comprensión para el usuario.
 https://mitiendanube.com/
 
 TripAdvisor  - servicio que ofrece interéses relacionados con dicho proyecto y poteciales clientes.
