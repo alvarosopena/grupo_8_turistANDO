@@ -4,7 +4,7 @@
 -- Link tablero Trello --
 https://trello.com/b/T32hwFQz/proyecto-dh
 
-Somos una empresa argentina dedicada al turimo nacional. 
+Somos una empresa argentina dedicada al turismo nacional. 
 
 Nuestros  servicios estan apuntados a todo el publico mayor de edad con ganas de viajar y conocer nuevos lugares de nuestro país.
 
