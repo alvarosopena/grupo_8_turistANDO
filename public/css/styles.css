@@ -1,0 +1,132 @@
+*{box-sizing: border-box;}
+
+.login-completo{height: 538px;
+width: 100%;
+background-image: url(/images/fondoLogin.jpg);
+display: flex;
+color: white;
+font-family:Arial, Helvetica, sans-serif; }
+
+.login-superior {
+    width: 475px;
+}
+i .fas fa-user {
+    padding: 3px;
+}
+.login-superior i {display: flex;
+justify-content: center;
+width: 100%;}
+
+.login-superior h2 {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.login {    
+    width: 90%;
+}
+.login div {margin: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+label {
+    box-sizing: border-box;
+    background-color: none;
+    outline: none;
+    resize: none;
+    font-family: "montserrat", "sans-serif";
+    transition: all .3s;
+
+}
+input{width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+} input::first-line {color: white;}
+
+.login div input {width: 80%;}
+.login .ingresar button {width: 25%;
+    border: 2px solid #bebed2;
+    float: right;
+    font-family:'Montserrat',sans-serif;
+    background-color: rgb(5, 2, 39);
+    color: white;
+    
+}
+
+.ingresar button:hover {background-color: grey;}
+    
+.registro-completo {background-color: rgb(250, 8, 20);
+color: white;
+height: 538px;
+    width: 100%;
+    display: flex;
+    }
+
+
+    .registro {
+        width: 90%;
+    }
+    .registro-superior {
+        width: 475px;
+    }
+    .registro-superior i {display: flex;
+    justify-content: center;
+    width: 100%;}
+    
+    .registro-superior h2 {
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+    
+    .registro div {margin: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .registro .ingresar button {width: 25%;
+        border: 2px solid #bebed2;
+        float: right;
+        font-family:'Montserrat',sans-serif;
+        background-color:rgb(250, 8, 20) ;
+        color: white;
+    }
+
+
+
+    @media (min-width: 480px){
+        .login-completo {
+            height: 500;
+            display: flex;
+            justify-content: center;
+            background-image: none;
+            background-color: rgb(5, 2, 39);
+        }
+        .login {padding: 5%;
+        }
+        .login-superior h2 {margin: 15px 0px;}
+        
+        
+        .login-superior h2 { display: flex;
+            justify-content: center}
+            .login div input {width: 100%;}
+        
+
+        .registro-completo {display: flex;
+            justify-content: center;
+            height: 650px;}
+
+            .registro {padding: 5%;
+            margin-bottom: 100px;
+        }
+        .registro-superior h2 {margin: 15px 0px;
+            display: flex;
+            justify-content: center}
+    }
