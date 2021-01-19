@@ -3,18 +3,19 @@ const app = express();
 app.use(express.static('public'));
 
 
-app.listen(process.env.PORT || 3003, ()=>{
+
+app.listen(process.env.PORT || 3001, ()=>{
     console.log('Servidor funcionando');
 });
-
+app.set ("view engine" , "ejs")
 app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/home.html');
+    res.render(__dirname + '/views/home.ejs');
 });
 
 app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
+    res.render(__dirname + '/views/login.ejs');
 });
 
 app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
+    res.render(__dirname + '/views/register.ejs');
 });
