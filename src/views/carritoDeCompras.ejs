@@ -5,49 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="/public/cssCarrito.css">
-        <title>Carrito de compras</title>
+    <link rel="stylesheet" href="../../css/cssCarrito.css">
+        <title>Carrito</title>
 </head>
 <body>
     <header class="header">
         <div class="header-img">
-            <img src="/public/images/gif fondo blanco.gif" width=400px height=400px alt="logo">
+            <img src="/../../images/gif fondo blanco.gif" width=300px height=300px alt="logo">
+         </div>   
+        
+        <div class ="text"> 
             <h2> Hagamos la reserva!</h2>
-            <p class= "compra"><i class="fas fa-shopping-cart"> </i> Reservá en cuotas con tarjeta de crédito</p>
-        </div>
-        <div class ="methods">
-            <a class="fab fa-cc-mastercard"> </a>
-            <a class="fab fa-cc-paypal"> </a>
-            <a class="fab fa-cc-amex"> </a>
-            <a class="fab fa-cc-visa"> </a>
-     
-        </div>
-        <div class= "header-right">
-            <h2> Resumen de tu compra</h2>
-            <h3>chequea que todo este correcto!</h3>
-        </div>
-        <div class= "header-left">
-            <img src="/public/images/baires.jpg" alt="example">
+                <p class= "compra"><i class=""> </i> Reservá solo con tu tarjeta de crédito</p>
+            <br>
+            <div class ="methods">
+                <a class="fab fa-cc-mastercard"> </a>
+                <a class="fab fa-cc-paypal"> </a>
+                <a class="fab fa-cc-amex"> </a>
+                <a class="fab fa-cc-visa"> </a>
             
-
         </div>
     </header>
-        
+
+
+        <div class= "resumen">
+            <h2> Resumen de tus reservas</h2>
+
+            <h3>Chequea que todo este correcto!</h3>
+                  
+            
     <section class="detail">
+        
+        <div class ="detail">
+            <p>
+                <ul>
+                    <li> <a href ="#"> Item 1 </a><p>Descripción</p></li>
+                    <li> <a href ="#"> Item 2 </a><p>Descripción</p></li>
+                    <li> <a href ="#"> Item 3 </a><p>Descripción</p></li>
+                    <li> <a href ="#"> Item 4 </a><p>Descripción</p></li>
+                </ul>
+            </p>
+        </div>
+        <div class ="boton-borrar"><input type="button" value="Vaciar carrito"></div>
+        <br>
+        
+    </div>
 
     </section>
 
-    <br>
-    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-    <br>
+  
 
     <section class="payment">
         <div class="payment">
             <div class="superior">
                 <h2>Pago (solo con tarjeta de credito)</h2>
             </div>
-            <div class="pay">
-                <form action="Pagar" method="POST">
+
+            <form action="Pagar" method="POST">
                 <div class="tarjeta">
                      <label for="numero-tarj"><i class="fas fa-credit-card"> Numero de tarjeta:</i> </label>
                      <input type="text" name="numero-tarj" id="numero-tarj" placeholder="XXXX XXXX XXXX XXXX">
@@ -65,17 +79,15 @@
 
                <div class="fecha">
                 <label for="fecha"><i class="fas fa-calendar-alt"></i> Fecha de vencimiento:</label>
-                <input type="calendar" name="fecha" id="fecha" placeholder="">
+                <input type="date" name="fecha" id="fecha" placeholder="">
             </div>
 
-                <div class="ingresar">
+                <div class="boton-confirmar">
                     <button type="submit"> Confirmar </button>
                 </div>
                 </form>
             </div>
-            <div class="login-inferior">
-
-            </div>
+            
         </div>
     </section>
     

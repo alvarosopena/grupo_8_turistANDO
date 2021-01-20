@@ -7,18 +7,73 @@ body {
 	background-attachment: fixed;
 	
 	width: 70%;
-	margin: auto
+	margin: auto;
+	margin-bottom: 50px;
 }
-
-.header-img {
+header{
+	padding: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+	justify-content: space-between;
+	box-shadow:0 0 15px 4px rgba(0,0,0,0.9);
+}
+ .header-img {
 	
 	display: flex;
     flex-wrap: wrap;
 	padding: 5px;
-	box-shadow:0 0 15px 4px rgba(0,0,0,0.9);
+	position: relative;
+	margin: auto;
 
+	
+}
+
+.text {
+	display:inline-block ;
+	flex-wrap: wrap;
+	margin: auto;
 	
 	
 }
 
+.methods{
+	font-size: 50px;
+}
 
+.detail{
+	 color: black; 
+	font-size:17px;
+	
+	
+}
+.detail ul {
+	padding: 20px;
+	box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.438);
+}
+
+.detail p {
+	font-style:italic
+}
+
+.boton-borrar {
+	float: right;
+	margin: auto;
+}
+
+.payment{
+	border: black solid 3px;
+	flex-wrap: wrap;
+	width: 600px;
+	margin: auto;
+	
+}
+
+.payment i {
+	font-size: larger;
+	padding:5px
+}
+
+.boton-confirmar {
+	float: right;
+	margin: auto;
+}

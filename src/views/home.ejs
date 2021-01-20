@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     
+    <!-- MAPA -->
     <script type="text/javascript" src="../dist/jquery.vmap.js"></script>
     <script type="text/javascript" src="/dist/map/jquery.vmap.argentina.js" charset="utf-8"></script>
-
     <script>
       jQuery(document).ready(function () {
         jQuery('#vmap').vectorMap({
@@ -30,6 +30,7 @@
         });
       });
     </script>
+    <!-- MAPA -->
    
   </head>
   <body>
@@ -46,9 +47,11 @@
         </div>
         <div class="header-right">
             <nav>
+                <a href="/carrito"><i class="fas fa-shopping-cart"></i></a>
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fas fa-envelope"></i></a>
+                
             </nav>
         </div>
       </div>
@@ -68,7 +71,37 @@
            <span class="icon"><i class="fa fa-search"></i></span>
            <input type="search" id="search" placeholder="Mendoza, Tucumán, Córdoba..." />
           </div>
+          <select name="lista-provincia">
+            
+            <option value="Ciudad Autonoma de Buenos Aires">Ciudad Autonoma de Buenos Aires</option> 
+            <option value="Buenos Aires">Buenos Aires</option> 
+            <option value="Catamarca">Catamarca</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre Ríos">Entre Ríos</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquén">Neuquén</option>
+            <option value="Rio Negro">Rio Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago del Estero">Santiago del Estero</option> 
+            <option value="Tierra del Fuego">Tierra del Fuego</option> 
+            <option value="Tucumán">Tucumán</option> 
+         </select>
      </div>
+     <h2> Elegiste la provincia de : </h2>
+     <a href="/provincia"></a>
+
 
      <div class ="map"> 
         <div id="vmap" style="width: 800px; height: 900px; opacity: 0.8;"></div>
