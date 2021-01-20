@@ -343,6 +343,7 @@ JQVMap.maps = {};
 
   jQuery.fn.vectorMap = function (options) {
 
+  /* PARA EDITAR EL MAPA */
     var defaultParams = {
       map: 'world_en',
       backgroundColor: '',

@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+body {
+	font: 22px sans-serif;
+	background-color: #ffffff;
+	background-attachment: fixed;
+	
+	width: 70%;
+	margin: auto
+}
+
+.header-img {
+	
+	display: flex;
+    flex-wrap: wrap;
+	padding: 5px;
+	box-shadow:0 0 15px 4px rgba(0,0,0,0.9);
+
+	
+	
+}
+
+
