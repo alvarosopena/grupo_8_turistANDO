@@ -1,9 +1,9 @@
 module.exports = {
-    provincia:( req ,  res )  =>  {
-        res.render ( 'provincia1',{ 
+    provincia:(req, res)  =>  {
+        res.render ( 'products/provincia1',{ 
         } )},
-    carrito: (req, res) => {
-        res.render ("carritoDeCompras", {
+    carrito:(req, res) => {
+        res.render ("products/carrito", {
 
-        })}    
-    }
+        })
+    }}

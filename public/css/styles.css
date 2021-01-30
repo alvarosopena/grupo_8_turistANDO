@@ -2,7 +2,7 @@
 
 .login-completo{height: 538px;
 width: 100%;
-background-image: url(/images/fondoLogin.jpg);
+
 display: flex;
 color: white;
 font-family:Arial, Helvetica, sans-serif; }
@@ -63,7 +63,7 @@ input{width:100%;
 
 .ingresar button:hover {background-color: grey;}
     
-.registro-completo {background-color: rgb(250, 8, 20);
+.registro-completo {
 color: white;
 height: 538px;
     width: 100%;
@@ -106,8 +106,8 @@ height: 538px;
             height: 500;
             display: flex;
             justify-content: center;
-            background-image: none;
-            background-color: rgb(5, 2, 39);
+            
+           
         }
         .login {padding: 5%;
         }

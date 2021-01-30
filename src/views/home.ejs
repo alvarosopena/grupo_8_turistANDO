@@ -15,8 +15,8 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     
     <!-- MAPA -->
-    <script type="text/javascript" src="../dist/jquery.vmap.js"></script>
-    <script type="text/javascript" src="/dist/map/jquery.vmap.argentina.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="../../dist/map/jquery.vmap.argentina.js" charset="utf-8"></script>
     <script>
       jQuery(document).ready(function () {
         jQuery('#vmap').vectorMap({
@@ -35,34 +35,9 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="header-left">
-            <a href="#"><span class="logo">Publicá tu anuncio</span></a>
-            <nav>
-              <a href="#">Cómo funciona</a>
-            </nav>
-        </div>
-        <div class="header-center">
-          <img src="../../images/gif fondo blanco.gif" alt="logo">
-        </div>
-        <div class="header-right">
-            <nav>
-                <a href="/carrito"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-                
-            </nav>
-        </div>
-      </div>
-      <div class="menu" data-animation="center">
-        <nav >
-          <a href="/login">Ingresá</a>
-          <span class="separador">|
-          <a href="/register"> Registrate </a>
-        </nav>
-      </div>
+      <%- include('partials/header'); %>
     </header>
+    
     
     <main> 
      <div class="box">
@@ -111,41 +86,8 @@
     
     
     <footer>
-    
-    <ul class="footer" >
-      <li>
-        <a href="#0">
-          Quienes Somos
-          <span class="border border-top"></span>
-          <span class="border border-bottom"></span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          Preguntas frecuentes
-          <span class="border border-top"></span>
-          <span class="border border-bottom"></span>
-          
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          Ayuda
-          <span class="border border-top"></span>
-          <span class="border border-bottom"></span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          Metodos de pago
-          <span class="border border-top"></span>
-          <span class="border border-bottom"></span>
-        </a>
-      </li>
-    </ul>
-      <a>Copyright © 1999-2021 TURISTEANDO S.A. </a>
-    </div>
-    
+      <%- include('partials/footer'); %>
     </footer>
+        
   </body>
 </html>

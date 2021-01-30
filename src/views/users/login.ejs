@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link href="../../css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/footer.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet"
 href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css ">
     <title>Login</title>
@@ -12,7 +14,9 @@ href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.cs
     
     <header>
         <div>
-            <h1> AQUÍ VA EL HEADER</h1>
+            <header>
+                <%- include('../partials/header'); %>
+              </header>
         </div>
     </header>
 
@@ -45,10 +49,7 @@ href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.cs
     </section>
 
     <footer>
-        
-        <div>
-            <h1> AQUI VA EL FOOTER</h1>
-        </div>
+        <%- include('../partials/footer'); %>
     </footer>
     
 </body>
