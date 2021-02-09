@@ -24,7 +24,6 @@ const jsonTable = {
         return 1;
     },
     
-
     all() {
         return this.readFile();
     },
